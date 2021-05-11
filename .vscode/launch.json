@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+        {
+            "name": "Python: videowalk test",
+            "type": "python",
+            "request": "launch",
+            "program": "/content/videowalk/code/test.py",
+            "console": "integratedTerminal",
+            "args": ["--filelist",
+                    "/content/videowalk/code/eval/davis_vallist.txt",
+                    "--model-type",
+                    "scratch",
+                    "--resume",
+                    "/content/videowalk/pretrained.pth",
+                    "--save-path",
+                    "results",
+                    "--topk",
+                    "10",
+                    "--videoLen"
+                    "5",
+                    "--radius",
+                    "12",
+                    "--temperature",
+                    "0.05",
+                    "--cropSize",
+                    "-1"]
+        }
+    ]
+}

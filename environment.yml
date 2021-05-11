@@ -1,0 +1,18 @@
+name: crw
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - pip
+  - py-opencv
+  - pip:
+    - torch
+    - numpy
+    - matplotlib
+    - torchvision==0.6.0
+    - scikit-image
+    - imageio
+    - wandb
+    - visdom
+    - sklearnc
